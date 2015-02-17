@@ -19,8 +19,9 @@
                 <a href="#" class="brand-logo" >pasterntCMS</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li @if($current == 'welcome') class="active" @endif><a href="#">Willkommen!</a></li>
+                    <li @if($current == 'database') class="active" @endif><a href="#">Datenbankdetails angeben</a></li>
                     <li @if($current == 'user') class="active" @endif><a href="#">Nutzer anlegen</a></li>
-                    <li @if($current == 'welcome') class="active" @endif><a href="javascript.html">JavaScript</a></li>
+                    <li @if($current == 'finish') class="active" @endif><a href="#">Fertig!</a></li>
                 </ul>
             </div>
             </div>
@@ -28,16 +29,7 @@
         </nav>
         </div>
     <div class="container">
-        <h3>Moin Moin ;)</h3>
-        <hr>
-        <p>Lange nicht gesehen, oder...? Tja, das &auml;ndert sich nun!</p>
-        <p>Wir sind erwachsener geworden und das CMS gleich mit. Es gibte eine komplett neue Basis - von Anfang
-        professioneller und vorallem: sicherer!</p>
-        <p>Auf jeden Fall sch&ouml;n das du zu uns gefunden hast. Lass uns auf die Reise gehen und die Installation
-        beginnen!</p>
-        <div style="text-align: center;">
-            <a  class="waves-effect waves-light btn" href="{{URL::to('install/user')}}">Los geht's!</a>
-        </div>
+        @yield('content')
 
     </div>
 
