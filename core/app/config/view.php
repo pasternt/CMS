@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'paths' => array(__DIR__.'/../../../templates/default', __DIR__.'/../views',),
+	'paths' => array(__DIR__.'/../../../templates/'.DB::table('settings')->where('key','template')->first()->value, __DIR__.'/../views',),
 
 	/*
 	|--------------------------------------------------------------------------

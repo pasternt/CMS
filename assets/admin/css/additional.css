@@ -8,3 +8,12 @@ nav .brand-logo {
 nav ul a{
     color: #444;
 }
+nav ul li:hover, nav ul li.active {
+
+}
+.rotate-90{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    writing-mode: lr-tb;
+}

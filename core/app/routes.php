@@ -1,21 +1,4 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
 /*
 |
 |   Installer-Routen
@@ -30,3 +13,13 @@ if(!file_exists(storage_path().'/cache/installer.lock')){
     Route::post('install/user', 'InstallerController@POST_User');
     Route::get('install/finished', 'InstallerController@GET_Finished');
 }
+
+/*
+ *
+ *  Öffentlich zugängliche Routen (eg. pages)
+ *
+ */
+
+    Route::get('/', 'PageController@Index');
+    Route::get('page/{seo_url}', 'PageController@CallPage');
+    Route::get('sitemap', 'PageController@Sitemap');

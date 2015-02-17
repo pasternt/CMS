@@ -3,7 +3,7 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="{{URL::to('/assets/admin')}}/css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{URL::to('/assets/admin')}}/css/additional.css"  media="screen,projection"/>
-        <title>{{$page}} - pasterntCMS</title>
+        <title>{{$page}} - LiOS</title>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
@@ -16,7 +16,7 @@
             <div class="nav-wrapper">
                 <div class="container">
                 <div class="col s12"style="padding-left: 0.75em; padding-right: 0.75em;" >
-                <a href="#" class="brand-logo" >pasterntCMS</a>
+                <a href="#" class="brand-logo" >LIOS</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li @if($current == 'welcome') class="active" @endif><a href="#">Willkommen!</a></li>
                     <li @if($current == 'database') class="active" @endif><a href="#">Datenbankdetails angeben</a></li>
